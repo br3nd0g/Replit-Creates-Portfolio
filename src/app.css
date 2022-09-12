@@ -1,0 +1,107 @@
+:root{
+  --backgroundclr: #1C0A00;
+  --backgroundclr2: #361500;
+  --textclr: #CC9544;
+  --highlightclr: #603601;
+}
+
+/*https://colorhunt.co/palette/1c0a00361500603601cc9544*/
+
+*{
+  color: var(--textclr);
+  margin: 0;
+  font-family: 'Inconsolata', monospace;
+}
+
+body{
+  min-height: 100vh;
+  background-color: var(--backgroundclr);
+}
+
+#root{
+  width: 100%;
+}
+
+#homeText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  padding: 15px 0;
+  border-top: 2px solid var(--highlightclr);
+  border-bottom: 2px solid var(--highlightclr);
+  text-align: center;
+}
+
+#replLink{
+  color: var(--highlightclr);
+}
+
+#homeMain{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+  min-height: 800px;
+}
+
+#bannerimg{
+  box-shadow:
+    0 0 13px #794301,
+    0 0 18px var(--highlightclr);
+  border-radius: 12px;
+  width: 40%;
+}
+
+#htText{
+  font-size: 25px;
+  text-align: center;
+}
+
+#htTitle{
+  font-size: 45px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+#fmain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+  min-height: calc(99vh - 153px);
+}
+
+@media only screen and (max-width: 1225px) {
+  #bannerimg{
+    display: none;
+  }
+  #homeText{
+    width: 75%;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 745px){
+  #homeText{
+    border: 0;
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  #homeText{
+    width: 90%;
+  }
+  #homeMain{
+    align-items: flex-start;
+    margin-top: 35px;
+  }
+  #htText{
+    font-size: 17px;
+  }
+  #htTitle{
+    font-size: 37px;
+  }
+}

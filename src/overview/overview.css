@@ -1,0 +1,23 @@
+#overviewText{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  border-top: 2px solid var(--highlightclr);
+  border-bottom: 2px solid var(--highlightclr);
+  text-align: center;
+  width: 75%;
+}
+
+@media only screen and (max-width: 745px){
+  #overviewText{
+    border: 0;
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  #overviewText{
+    width: 90%;
+  }
+}
